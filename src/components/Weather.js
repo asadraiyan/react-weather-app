@@ -13,9 +13,6 @@ const Weather = () => {
   const [pressure, setPressure] = useState(0)
   const [wind, setWind] = useState(0)
 
-  console.log("search =", search)
-  console.log("city =", city)
-
   useEffect(() => {
     const fetchApi = async () => {
       const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=5255240a6a92d92cfd72d46bcdc8d294`;
@@ -32,8 +29,9 @@ const Weather = () => {
   }, [search])
   return (
     <div className='main-container'>
-      <h1 className='heading'>Weather app !</h1>
+
       <div className="container">
+        <h1 className='heading'>Weather app !</h1>
         <input className='search'
           type="search" onChange={(event) => {
             setSearch(event.target.value)
@@ -45,7 +43,7 @@ const Weather = () => {
 
         {
           !city ? (
-            <p className='invalid'>Invalid City Name</p>
+            <p className='invalid'>Invalid city name</p>
           ) : (
             <>
               <h1 className='city-name'>{search}</h1>

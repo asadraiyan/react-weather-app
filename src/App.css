@@ -20,7 +20,7 @@
 .container {
   /* border: 2px solid red; */
   width: 500px;
-  height: 60vh;
+  height: 80vh;
   background-color: #FFDEE9;
   background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 
@@ -48,7 +48,7 @@
 
 .heading {
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .weather-icon {
@@ -100,8 +100,9 @@
 }
 
 .invalid {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 25px;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 525px) {
@@ -138,7 +139,7 @@
 @media only screen and (max-width: 450px) {
   .container {
     width: 360px;
-    height: 55vh;
+    height: 65vh;
   }
 
   .weather-props {
@@ -163,32 +164,37 @@
   }
 
   .search {
-    font-size: 16px;
+    font-size: 18px;
     height: 30px;
-    width: 200px;
+    width: 225px;
   }
 
   .heading {
     font-size: 35px;
   }
+
+  .invalid {
+    font-size: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
   .container {
-    width: 300px;
-    height: 50vh;
+    width: 330px;
+
   }
 
   .weather-props {
-    width: 270px;
+    width: 300px;
   }
 
   .font {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .icons {
-    font-size: 23px;
+    font-size: 25px;
   }
 
   .weather-icon {
@@ -200,10 +206,7 @@
     font-size: 20px;
   }
 
-  .search {
-    font-size: 14px;
-    height: 27px;
-  }
+
 
   .heading {
     font-size: 30px;
